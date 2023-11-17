@@ -58,7 +58,14 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 //formularze
-//
+//wybierz zawód
+//pod jakieś opcje lista, button pokarz, informacje na temat zawodu poniżej
+//plik z galerią zdjęcie ,poniżej lista z numerami zdjęć, jak się kliknie to się zmienia, przycisk lewo prawo
+//timer 00:00:00, przycisk start stop reset i zapisz(czas zapisywał się w listView)
+// produkty z cenami, po kliknięciu z nazwami produktu
+//program zgadnij liczbę, pole na liczbę, podpowiedź, dalej więcej mniej
+// kalkulator
 //galeria
 //timer
 //używać recyclerView
+//zadanie z widokiem(kolor margines itp.)
