@@ -3,7 +3,10 @@ package com.example.na_sprawdzian;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -11,6 +14,8 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     private ListView listViewMysli;
     private ArrayList<String> mysli = new ArrayList<>();
+    private Button button;
+    private EditText editText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +32,19 @@ public class MainActivity extends AppCompatActivity {
                 );
         listViewMysli = findViewById(R.id.listView2);
         listViewMysli.setAdapter(adapter);
+        button = findViewById(R.id.button);
+        editText = findViewById(R.id.editTextMysl);
+        button.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        String mysl = editText.getText().toString();
+                        mysli.add(mysl);
+                        adapter.notifyDataSetChanged();
+                        editText.setText("");
+                    }
+                }
+        );
     }
 }
 //formularze

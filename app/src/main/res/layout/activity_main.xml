@@ -4,42 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/activity_main_scene"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dobre myśli" />
+        android:text="Dobre myśli"
+        android:textSize="24sp"/>
 
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:entries="@array/mysli"
-        android:divider="#F31717"
+        android:divider="#2E82CA"
         android:dividerHeight="2dp"/>
 
     <com.google.android.material.divider.MaterialDivider
-        android:layout_height="4dp"
-        android:layout_width="match_parent"/>
+        android:layout_width="match_parent"
+        android:layout_height="4dp"/>
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="TextView"
-        />
+        android:text="Lista myśli dynamicznie:"
+        android:textSize="24sp"
+        android:textColor="#234563"/>
 
     <ListView
         android:id="@+id/listView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lista myśli dynamicznie: "
+        android:layout_height="wrap_content" >
 
-        />
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextMysl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Dobra myśl" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#123456"
+            android:text="Dodaj" />
+    </LinearLayout>
+
+
 </LinearLayout>
