@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="24dp"
+    android:padding="24dp"
     android:background="#00F417"
     tools:context=".TimerActivity">
 
@@ -23,29 +23,55 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="Start"
+        android:layout_gravity="center"
+        android:backgroundTint="#3C46DF"
+        android:layout_margin="8dp"
+        android:textColor="@color/white"
+        />
 
     <Button
+        android:text="Stop"
         android:id="@+id/button3"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_gravity="center"
+        android:backgroundTint="#3C46DF"
+        android:layout_margin="8dp"
+        android:textColor="@color/white"
+        />
 
     <Button
+        android:text="Zapisz"
         android:id="@+id/button4"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_gravity="center"
+        android:backgroundTint="#3C46DF"
+        android:layout_margin="8dp"
+        android:textColor="@color/white"
+        android:padding="4dp"
+        />
 
     <Button
+        android:text="Reset"
         android:id="@+id/button5"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_gravity="center"
+        android:backgroundTint="#3C46DF"
+        android:layout_margin="8dp"
+        android:textColor="@color/white"
+        />
 
     <ListView
+        android:id="@+id/listView3"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:text="Start"
+        android:dividerHeight="2dp"
+        android:divider="@color/white"
+        />
 </LinearLayout>
