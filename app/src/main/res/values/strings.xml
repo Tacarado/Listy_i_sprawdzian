@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">na_sprawdzian</string>
+    <string-array name="mysli">
+    <item>Nic nie musisz wszysko możesz</item>
+    <item>Lepiej późno niż później</item>
+        <item>Wymagaj od siebie nawet gdyby inni nie chiceli</item>
+
+        </string-array>
 </resources>
