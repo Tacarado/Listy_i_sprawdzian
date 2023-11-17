@@ -6,4 +6,22 @@
         <item>Wymagaj od siebie nawet gdyby inni nie chiceli</item>
 
     </string-array>
+    <string-array name="zjdecia">
+         <item>
+            Dledne skały
+        </item>
+        <item>
+            omg piesek
+        </item>
+        <item>
+            Szczelina
+        </item>
+        <item>
+            Woda w szelińcach
+        </item>
+        <item>
+            Dzczelinowy dom
+        </item>
+
+    </string-array>
 </resources>
